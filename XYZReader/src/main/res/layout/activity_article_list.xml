@@ -18,6 +18,7 @@
             android:background="@color/colorPrimary"
             app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:title="@string/app_name"
+            android:elevation="@dimen/toolbar_elevation"
             app:titleTextColor="@color/colorWhite" />
     </android.support.design.widget.AppBarLayout>
 

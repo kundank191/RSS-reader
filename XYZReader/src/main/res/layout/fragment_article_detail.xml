@@ -37,10 +37,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/detail_card_top_margin"
-                android:background="#fff"
-                android:elevation="2dp"
-                android:maxWidth="@dimen/detail_card_max_width"
+                android:layout_marginTop="@dimen/detail_photo_height"
+                android:elevation="@dimen/toolbar_elevation"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -49,7 +47,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_marginBottom="@dimen/detail_metabar_vert_padding"
-                    android:background="#333"
+                    android:background="@color/textBackground"
                     android:orientation="vertical"
                     android:paddingBottom="@dimen/detail_metabar_vert_padding"
                     android:paddingLeft="@dimen/detail_inner_horiz_margin"
@@ -75,7 +73,7 @@
                         android:layout_width="wrap_content"
                         tools:text="some date "
                         android:layout_height="wrap_content"
-                        android:textColor="#8fff" />
+                        android:textColor="@color/colorDarkText" />
                 </LinearLayout>
 
                 <TextView
@@ -87,8 +85,10 @@
                     android:layout_marginRight="@dimen/detail_inner_horiz_margin"
                     android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier"
                     android:paddingBottom="@dimen/detail_body_bottom_margin"
+                    android:gravity="center"
+                    android:layout_gravity="center"
                     android:textColor="@color/primaryText"
-                    android:textColorLink="@color/theme_accent"
+                    android:textColorLink="@color/colorAccent"
                     android:textSize="@dimen/detail_body_text_size" />
 
             </com.example.xyzreader.ui.MaxWidthLinearLayout>
@@ -97,13 +97,14 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/share_fab"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
+        android:layout_width="@dimen/fab_dimens"
+        android:layout_height="@dimen/fab_dimens"
         android:layout_gravity="bottom|end"
         android:layout_marginBottom="@dimen/fab_margin"
         android:layout_marginEnd="@dimen/fab_margin"
         android:background="@drawable/add_fab_background"
         android:contentDescription="@string/action_share"
+        app:elevation="@dimen/fab_elevation"
         android:src="@drawable/ic_share_white_24dp"
         android:stateListAnimator="@anim/fab_state_list_anim" />
 
