@@ -1,4 +1,4 @@
-= XYZ Reader
+# XYZ Reader
 
 This shows blogs in a list.
 
