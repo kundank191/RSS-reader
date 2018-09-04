@@ -108,8 +108,8 @@ public class ArticleDetailFragment extends android.support.v4.app.Fragment imple
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
 
         mScrollView =  mRootView.findViewById(R.id.scrollview);
@@ -247,6 +247,7 @@ public class ArticleDetailFragment extends android.support.v4.app.Fragment imple
         }
     }
 
+    @NonNull
     @Override
     public android.support.v4.content.Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
         return ArticleLoader.newInstanceForItemId(getActivity(), mItemId);
